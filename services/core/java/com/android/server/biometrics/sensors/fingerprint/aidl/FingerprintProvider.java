@@ -914,13 +914,7 @@ public class FingerprintProvider implements IBinder.DeathRecipient, ServiceProvi
     }
 
     void setTestHalEnabled(boolean enabled) {
-        final boolean changed = enabled != mTestHalEnabled;
         mTestHalEnabled = enabled;
-        Slog.i(getTag(), "setTestHalEnabled(): useVhalForTesting=" + Flags.useVhalForTesting()
-                + "mTestHalEnabled=" + mTestHalEnabled + " changed=" + changed);
-        if (changed && useVhalForTesting()) {
-            getHalInstance();
-        }
     }
 
     public boolean getTestHalEnabled() {
@@ -1012,7 +1006,7 @@ public class FingerprintProvider implements IBinder.DeathRecipient, ServiceProvi
         if (mVhal == null && useVhalForTesting()) {
             mVhal = IVirtualHal.Stub.asInterface(mDaemon.asBinder().getExtension());
             if (mVhal == null) {
-                Slog.e(getTag(), "Unable to get fingerprint virtualhal interface");
+                Slog.e(getTag(), "Unable to get virtual hal interface");
             }
         }
 
