@@ -248,9 +248,6 @@ constructor(
                                             udfpsOverlayInteractor = udfpsOverlayInteractor,
                                         )
                                 }
-                                if (requestReason.isEnrollmentReason()) {
-                                    this.setEnrolling(true);
-                                }
                             }
                 } else {
                     overlayViewLegacy =
