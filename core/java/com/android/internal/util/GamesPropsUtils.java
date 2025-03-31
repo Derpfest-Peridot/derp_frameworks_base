@@ -136,6 +136,12 @@ public final class GamesPropsUtils {
                     "com.tencent.tmgp.kr.codm",
                     "com.vng.codmvn"
                 });
+
+        propsToChange.put("ROG", createROGProps());
+        packagesToChange.put("ROG", new String[] {
+            "com.dts.freefireth",
+            "com.dts.freefiremax"
+                });        
     }
 
     private static Map<String, Object> createBS4Props() {
@@ -234,6 +240,15 @@ public final class GamesPropsUtils {
         props.put("BRAND", "Lenovo");
         props.put("MANUFACTURER", "Lenovo");
         props.put("MODEL", "Lenovo TB-9707F");
+        return props;
+    }
+
+    private static Map<String, Object> createROGProps() {
+        Map<String, Object> props = new HashMap<>();
+        props.put("BRAND", "Asus");
+        props.put("DEVICE", "ROG Phone");
+        props.put("MANUFACTURER", "Asus");
+        props.put("MODEL", "ASUS_Z01QD");
         return props;
     }
 
