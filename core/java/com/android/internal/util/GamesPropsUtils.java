@@ -39,80 +39,62 @@ public final class GamesPropsUtils {
     private static final Map<String, String[]> packagesToChange = new HashMap<>();
 
     static {
-        propsToChange.put("BS4", createBS4Props());
-        packagesToChange.put("BS4", new String[] {"com.proximabeta.mf.uamo"});
-
-        propsToChange.put("F5", createF5Props());
+        propsToChange.put("ROG9P", createROG9PProps());
         packagesToChange.put(
-                "F5",
-                new String[] {"com.dts.freefiremax", "com.dts.freefireth", "com.mobile.legends"});
-
-        propsToChange.put("iQ11", createiQ11Props());
-        packagesToChange.put(
-                "iQ11",
+                "ROG9P",
                 new String[] {
-                    "com.tencent.KiHan",
-                    "com.tencent.tmgp.cf",
-                    "com.tencent.tmgp.cod",
-                    "com.tencent.tmgp.gnyx"
-                });
-
-        propsToChange.put("MI11T", createMI11TProps());
-        packagesToChange.put(
-                "MI11T",
-                new String[] {
+                    "com.mobilelegends.mi",
+                    "com.supercell.brawlstars",
+                    "com.blizzard.diablo.immortal",
+                    "com.netease.newspike",
+                    "com.activision.callofduty.warzone",
+                    "com.pubg.newstate",
+                    "com.gamedevltd.destinywarfare",
+                    "com.pikpok.dr2.play",
+                    "com.CarXTech.highWay",
+                    "com.nekki.shadowfight3",
+                    "com.nekki.shadowfightarena",
+                    "com.gameloft.android.ANMP.GloftA8HM",
+                    "com.nekki.shadowfight",
+                    "com.ea.game.nfs14_row",
+                    "com.ea.games.r3_row",
+                    "com.supercell.squad",
+                    "com.blitzteam.battleprime",
+                    "com.proximabeta.mf.uamo",
                     "com.ea.gp.apexlegendsmobilefps",
                     "com.levelinfinite.hotta.gp",
-                    "com.supercell.brawlstars",
                     "com.supercell.clashofclans",
-                    "com.vng.mlbbvn"
-                });
-
-        propsToChange.put("MI13P", createMI13PProps());
-        packagesToChange.put(
-                "MI13P", new String[] {"com.levelinfinite.sgameGlobal", "com.tencent.tmgp.sgame"});
-
-        propsToChange.put("NX729J", createNX729JProps());
-        packagesToChange.put("NX729J", new String[] {"com.YoStar.AetherGazer"});
-
-        propsToChange.put("OP8P", createOP8PProps());
-        packagesToChange.put(
-                "OP8P",
-                new String[] {
+                    "com.vng.mlbbvn",
+                    "com.levelinfinite.sgameGlobal",
+                    "com.tencent.tmgp.sgame",
                     "com.netease.lztgglobal",
                     "com.riotgames.league.wildrift",
                     "com.riotgames.league.wildrifttw",
-                    "com.riotgames.league.wildriftvn"
-                });
-
-        propsToChange.put("OP9P", createOP9PProps());
-        packagesToChange.put(
-                "OP9P",
-                new String[] {
-                    "com.epicgames.fortnite",
-                    "com.epicgames.portal",
-                    "com.tencent.lolm",
-                    "jp.konami.pesam"
-                });
-
-        propsToChange.put("ROG3", createROG3Props());
-        packagesToChange.put(
-                "ROG3",
-                new String[] {
+                    "com.riotgames.league.wildriftvn",
+                    "com.mobile.legends",
+                    "com.kiloo.subwaysurf",
                     "com.ea.gp.fifamobile",
-                    "com.pearlabyss.blackdesertm.gl",
-                    "com.pearlabyss.blackdesertm"
+                    "com.gameloft.android.ANMP.GloftA9HM",
+                    "com.madfingergames.legends",
+                    "com.pearlabyss.blackdesertm",
+                    "com.pearlabyss.blackdesertm.gl"
                 });
 
         propsToChange.put("ROG6", createROG6Props());
         packagesToChange.put(
                 "ROG6",
                 new String[] {
-                    "com.gameloft.android.ANMP.GloftA9HM",
-                    "com.madfingergames.legends",
                     "com.riotgames.league.teamfighttactics",
                     "com.riotgames.league.teamfighttacticstw",
                     "com.riotgames.league.teamfighttacticsvn"
+                });
+        
+        propsToChange.put("ROG1", createROG1Props());
+        packagesToChange.put(
+                "ROG1",
+                new String[] {
+                    "com.dts.freefireth",
+                    "com.dts.freefiremax"
                 });
 
         propsToChange.put("S24U", createS24UProps());
@@ -137,85 +119,32 @@ public final class GamesPropsUtils {
                     "com.vng.codmvn"
                 });
 
-        propsToChange.put("ROG", createROGProps());
-        packagesToChange.put("ROG", new String[] {
-            "com.dts.freefireth",
-            "com.dts.freefiremax"
-                });        
+        propsToChange.put("iQ11", createiQ11Props());
+        packagesToChange.put(
+                "iQ11",
+                new String[] {
+                    "com.tencent.KiHan",
+                    "com.tencent.tmgp.cf",
+                    "com.tencent.tmgp.cod",
+                    "com.tencent.tmgp.gnyx"
+                });
+
+        propsToChange.put("NX729J", createNX729JProps());
+        packagesToChange.put("NX729J", new String[] {"com.YoStar.AetherGazer"});
+
+        propsToChange.put("OP9P", createOP9PProps());
+        packagesToChange.put(
+                "OP9P",
+                new String[] {
+                    "jp.konami.pesam"
+                });
     }
 
-    private static Map<String, Object> createBS4Props() {
-        Map<String, Object> props = new HashMap<>();
-        props.put("BRAND", "blackshark");
-        props.put("MANUFACTURER", "blackshark");
-        props.put("MODEL", "SHARK PRS-A0");
-        return props;
-    }
-
-    private static Map<String, Object> createF5Props() {
-        Map<String, Object> props = new HashMap<>();
-        props.put("BRAND", "Xiaomi");
-        props.put("MANUFACTURER", "Xiaomi");
-        props.put("MODEL", "23049PCD8G");
-        return props;
-    }
-
-    private static Map<String, Object> createiQ11Props() {
-        Map<String, Object> props = new HashMap<>();
-        props.put("BRAND", "vivo");
-        props.put("MANUFACTURER", "vivo");
-        props.put("MODEL", "V2243A");
-        return props;
-    }
-
-    private static Map<String, Object> createMI11TProps() {
-        Map<String, Object> props = new HashMap<>();
-        props.put("BRAND", "Xiaomi");
-        props.put("MANUFACTURER", "Xiaomi");
-        props.put("MODEL", "21081111RG");
-        return props;
-    }
-
-    private static Map<String, Object> createMI13PProps() {
-        Map<String, Object> props = new HashMap<>();
-        props.put("BRAND", "Xiaomi");
-        props.put("MANUFACTURER", "Xiaomi");
-        props.put("MODEL", "2210132C");
-        return props;
-    }
-
-    private static Map<String, Object> createNX729JProps() {
-        Map<String, Object> props = new HashMap<>();
-        props.put("BRAND", "nubia");
-        props.put("DEVICE", "NX729J");
-        props.put("MANUFACTURER", "nubia");
-        props.put("MODEL", "NX729J");
-        return props;
-    }
-
-    private static Map<String, Object> createOP8PProps() {
-        Map<String, Object> props = new HashMap<>();
-        props.put("BRAND", "OnePlus");
-        props.put("DEVICE", "OnePlus8Pro");
-        props.put("MANUFACTURER", "OnePlus");
-        props.put("MODEL", "IN2020");
-        return props;
-    }
-
-    private static Map<String, Object> createOP9PProps() {
-        Map<String, Object> props = new HashMap<>();
-        props.put("BRAND", "OnePlus");
-        props.put("DEVICE", "OnePlus9Pro");
-        props.put("MANUFACTURER", "OnePlus");
-        props.put("MODEL", "LE2101");
-        return props;
-    }
-
-    private static Map<String, Object> createROG3Props() {
+    private static Map<String, Object> createROG9PProps() {
         Map<String, Object> props = new HashMap<>();
         props.put("BRAND", "asus");
         props.put("MANUFACTURER", "asus");
-        props.put("MODEL", "ASUS_I003D");
+        props.put("MODEL", "ASUS_AI2501");
         return props;
     }
 
@@ -224,6 +153,14 @@ public final class GamesPropsUtils {
         props.put("BRAND", "asus");
         props.put("MANUFACTURER", "asus");
         props.put("MODEL", "ASUS_AI2201");
+        return props;
+    }
+    
+    private static Map<String, Object> createROG1Props() {
+        Map<String, Object> props = new HashMap<>();
+        props.put("BRAND", "asus");
+        props.put("MANUFACTURER", "asus");
+        props.put("MODEL", "ASUS_Z01QD");
         return props;
     }
 
@@ -243,12 +180,27 @@ public final class GamesPropsUtils {
         return props;
     }
 
-    private static Map<String, Object> createROGProps() {
+    private static Map<String, Object> createiQ11Props() {
         Map<String, Object> props = new HashMap<>();
-        props.put("BRAND", "Asus");
-        props.put("DEVICE", "ROG Phone");
-        props.put("MANUFACTURER", "Asus");
-        props.put("MODEL", "ASUS_Z01QD");
+        props.put("BRAND", "vivo");
+        props.put("MANUFACTURER", "vivo");
+        props.put("MODEL", "V2243A");
+        return props;
+    }
+
+    private static Map<String, Object> createNX729JProps() {
+        Map<String, Object> props = new HashMap<>();
+        props.put("BRAND", "nubia");
+        props.put("MANUFACTURER", "nubia");
+        props.put("MODEL", "NX729J");
+        return props;
+    }
+
+    private static Map<String, Object> createOP9PProps() {
+        Map<String, Object> props = new HashMap<>();
+        props.put("BRAND", "OnePlus");
+        props.put("MANUFACTURER", "OnePlus");
+        props.put("MODEL", "LE2101");
         return props;
     }
 
