@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 DerpFest
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Blur radius used by SystemUI -->
+    <dimen name="min_window_blur_radius">1px</dimen>
+    <dimen name="max_window_blur_radius">17.5dp</dimen>
+
+    <!-- Pocket Mode -->
+    <dimen name="pocket_view_img_height">480dp</dimen>
+    <dimen name="pocket_view_img_width">240dp</dimen>
+    <dimen name="pocket_view_img_margin_top">32dp</dimen>
+    <dimen name="pocket_view_title_size">28sp</dimen>
+    <dimen name="pocket_view_title_cancel_size">20sp</dimen>
+    <dimen name="pocket_view_title_cancel_margin_top">48dp</dimen>
+    <dimen name="pocket_view_margin_horizontal">48dp</dimen>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 DerpFest
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Landscape Battery -->
+    <java-symbol type="string" name="config_batterymeterRLandPerimeterPath" />
+    <java-symbol type="string" name="config_batterymeterRLandFillMask" />
+    <java-symbol type="string" name="config_batterymeterRLandBoltPath" />
+    <java-symbol type="string" name="config_batterymeterRLandPowersavePath" />
+    <java-symbol type="string" name="config_batterymeterRLandErrorPerimeterPath" />
+    <java-symbol type="string" name="config_batterymeterLandPerimeterPath" />
+    <java-symbol type="string" name="config_batterymeterLandFillMask" />
+    <java-symbol type="string" name="config_batterymeterLandBoltPath" />
+    <java-symbol type="string" name="config_batterymeterLandPowersavePath" />
+    <java-symbol type="string" name="config_batterymeterLandErrorPerimeterPath" />
+
+    <!-- For dynamic default font styles -->
+    <java-symbol type="string" name="config_bodyFontFamily" />
+
+    <!-- Whether to use Richtap vibration -->
+    <java-symbol type="bool" name="config_usesRichtapVibration" />
+
+    <!-- Vendor mismatch fingerprint warning -->
+    <java-symbol type="string" name="system_error_vendorprint" />
+
+    <!-- Whether or not we should show vendor mismatch message -->
+    <java-symbol type="bool" name="config_show_vendor_mismatch_message" />
+
+    <!-- App error dialog -->
+    <java-symbol type="id" name="aerr_copy" />
+    <java-symbol type="string" name="url_copy_success" />
+    <java-symbol type="string" name="url_copy_failed" />
+
+    <!-- Location indicator -->
+    <java-symbol type="drawable" name="stat_sys_location" />
+
+    <!-- Blur radius used by SystemUI -->
+    <java-symbol type="dimen" name="min_window_blur_radius" />
+    <java-symbol type="dimen" name="max_window_blur_radius" />
+
+    <!-- Slider vibrations fallbacks - set either to non positive to disable
+         maximum duration in ms the slider vibrations scale to from 0 -->
+    <java-symbol type="integer" name="config_sliderVibFallbackDuration" />
+
+    <!-- Sensor block -->
+    <java-symbol type="array" name="config_blockPackagesSensorDrain" />
+
+    <!-- Udfps animation package -->
+    <java-symbol type="string" name="config_udfps_animation_customization_package" />
+
+    <!-- Cycle through ringer modes -->
+    <java-symbol type="string" name="volume_dialog_ringer_guidance_normal" />
+
+    <!-- USB -->
+    <java-symbol type="string" name="config_usbFunctionActivity" />
+
+    <!-- Whether to cancel fingerprint operation if not idle -->
+    <java-symbol type="bool" name="config_fpCancelIfNotIdle" />
+
+    <!-- Mock Oplus LinearmotorVibratorService -->
+    <java-symbol type="bool" name="config_mockOplusLinearmotorVibratorService" />
+
+    <!-- Pocket Lock -->
+    <java-symbol type="layout" name="pocket_lock_view" />
+    <!-- Pocket bridge -->
+    <java-symbol type="string" name="config_pocketBridgeSysfsInpocket" />
+    <java-symbol type="bool" name="config_pocketModeSupported" />
+    <java-symbol type="bool" name="config_pocketUseLightSensor" />
+    <!-- Pocket Service -->
+    <java-symbol type="string" name="config_pocketJudgeVendorSensorName" />
+    <java-symbol type="dimen" name="config_pocketJudgeVendorSensorValue" />
+    <java-symbol type="string" name="config_pocketJudgeVendorProximitySensorName" />
+
+    <!-- Define device configs on boot -->
+    <java-symbol type="array" name="global_device_configs_override" />
+    <java-symbol type="array" name="device_configs_override" />
+
+    <!-- Lock gesture -->
+    <java-symbol type="string" name="gesture_locked_warning" />
+
+    <!-- PowerOffAlarmService -->
+    <java-symbol type="bool" name="config_powerOffAlarmEnabled" />
+    <java-symbol type="string" name="notification_channel_poweroff_alarm" />
+    <java-symbol type="string" name="poweroff_alarm_title" />
+    <java-symbol type="string" name="poweroff_alarm_body" />
+    <java-symbol type="drawable" name="ic_alarm_on" />
+
+    <!-- Device keyhandlers -->
+    <java-symbol type="array" name="config_deviceKeyHandlerLibs" />
+    <java-symbol type="array" name="config_deviceKeyHandlerClasses" />
+
+    <!-- These are system packages exempted from privacy indicator -->
+    <java-symbol type="array" name="config_indicatorExemptedPackageNames" />
+
+    <!-- Bootleg unneccesary gradient declaration | Just for our shishu bars -->
+    <java-symbol type="color" name="bootleg_accent_gradient_end_color" />
+
+    <!-- Slider vibrations fallbacks - set to true to vary amplitude in addition to duration -->
+    <java-symbol type="bool" name="config_sliderVibFallbackWaveform" />
+</resources>
